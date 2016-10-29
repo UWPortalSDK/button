@@ -16,6 +16,8 @@ angular.module('portalApp')
 
             if ((min == 0 && sec <= 0) || (min < 0)) {
                 $scope.isExpired = true;
+            } else {
+             	$scope.isExpired = false;   
             }
 
             min = ('0' + min).slice(-2);
