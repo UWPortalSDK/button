@@ -21,12 +21,10 @@ angular.module('portalApp')
     }
     
     var getColor = function(time) {
-        var secondsLeft = Math.ceil((time.getSeconds - new Date().getSeconds()));
-        if (secondsLeft >= 50 * 60) {
-            return 'black';
-        } else if (secondsLeft >= 30 * 60) {
-        	return 'blue';    
-        } else if (secondsLeft >= 20 * 60) {
+        var secondsLeft = Math.ceil((time.getTime() - (new Date().getTime())) / 1000);
+        if (secondsLeft >= 40) {
+            return 'white';
+        } else if (secondsLeft >= 20) {
             return 'yellow';
         } else {
        		return 'red';
