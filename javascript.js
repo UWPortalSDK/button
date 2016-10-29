@@ -3,6 +3,8 @@ angular.module('portalApp')
         //Date d = new Date();
         //d.setMilliseconds(d.getMilliseconds() + (1000 * 60 * 60));
         //$scope.finishTime = new Date();
+        //
+       	
 
 
         var formatTime = function(time) {
@@ -52,6 +54,7 @@ angular.module('portalApp')
                     var finishTime = new Date(data.finishTime);
                     if (finishTime.getTime() !== $scope.finishTime.getTime()) {
                         $scope.finishTime = finishTime;
+                        $scope.clicks = data.clicks;
                         refresh();
                     }
                 });
@@ -72,6 +75,7 @@ angular.module('portalApp')
                                 $scope.click = false;
                             }, 100);
                         }
+                        $scope.clicks = data.clicks;
                         $scope.finishTime = finishTime;
                         refresh();
                     }
