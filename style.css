@@ -1,67 +1,70 @@
-.label{
-	margin-right:5px;
+.label {
+    margin-right: 5px;
 }
 
 .round-button {
-	width: 100%;
+    width: 100%;
 }
-.round-button-circle {
-	width: 50vw;
-	height: 50vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 50%;
-	border:10px solid #cfdcec;
-  overflow:hidden;
 
-  background: #4679BD; 
-  transition: all 0.3s ease;
-  box-shadow: 0 0 3px gray;
+.round-button-circle {
+    width: 50vw;
+    height: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 10px solid #cfdcec;
+    overflow: hidden;
+    background: #4679BD;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 3px gray;
 }
+
 .round-button-circle:hover {
-	background: #30588e;
+    background: #30588e;
 }
+
 .outer-click {
-	background: white;
-   -webkit-transform: scale(1.3);
-   -ms-transform: scale(1.3);
-   transform: scale(1.3);
-   transition: all 0.3s ease;
+    background: white;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: all 0.3s ease;
 }
 
 .round-button-circle:active {
-	background: white;
-   -webkit-transform: scale(1.3);
-   -ms-transform: scale(1.3);
-   transform: scale(1.3);
+    background: white;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
+
 .round-button a {
-  display:block;
-	float:left;
-	width:100%;
-	padding-top:50%;
-  padding-bottom:50%;
-	line-height:1em;
-	margin-top:-0.5em;
-    
-	text-align:center;
-	color:#e2eaf3;
-  font-family:Verdana;
-  font-size:1.2em;
-  font-weight:bold;
-  text-decoration:none;
-  
-  transition: color 0.1s ease;
+    display: block;
+    float: left;
+    width: 100%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    line-height: 1em;
+    margin-top: -0.5em;
+    text-align: center;
+    color: #e2eaf3;
+    font-family: Verdana;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.1s ease;
 }
 
 .round-button a:hover {
-  color:#e2eaf3;
+    color: #e2eaf3;
 }
+
 .inner-click {
-  color: red !important;
+    color: red !important;
 }
+
 .round-button a:active {
-  color: red;
+    color: red;
 }
