@@ -21,6 +21,21 @@
     box-shadow: 0 0 3px gray;
 }
 
+.round-button-circle-disabled {
+    width: 50vw;
+    height: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 10px solid #D3D3D3;
+    overflow: hidden;
+    background: #A9A9A9;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 3px gray;
+}
+
 .round-button-circle:hover {
     background: #30588e;
 }
