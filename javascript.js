@@ -7,11 +7,13 @@ angular.module('portalApp')
    
 	
     var formatTime = function(time) {
-        var secondsLeft = Math.ceil((time.getTime() - (new Date().getTime())) / 1000);
-        var min = Math.floor(secondsLeft / 60);
-        secondsLeft -= min * 60;
+        var delta = (time.getTime() - (new Date().getTime()));
+        var secondsLeft =  delta / 1000.0;
+        secondsLeft = Math.round(secondsLeft);
+        var min = Math.floor(secondsLeft / 60.0);
+        secondsLeft = Math.round(secondsLeft - (min * 60.0));
         var sec = secondsLeft;
-       
+        
         min = ('0' + min).slice(-2);
         sec = ('0' + sec).slice(-2);
         
