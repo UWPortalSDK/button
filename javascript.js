@@ -14,7 +14,7 @@ angular.module('portalApp')
             secondsLeft = Math.round(secondsLeft - (min * 60.0));
             var sec = secondsLeft;
 
-            if (min <= 0) {
+            if ((min == 0 && sec <= 0) || (min < 0)) {
                 $scope.isExpired = true;
             }
 
