@@ -1,6 +1,6 @@
 angular.module('portalApp')
     .controller('buttonCtrl', ['$scope', '$interval', '$http', '$animate', '$timeout', function($scope, $interval, $http, $animate, $timeout) {
-
+		$scope.canClick = true;
         //Date d = new Date();
         //d.setMilliseconds(d.getMilliseconds() + (1000 * 60 * 60));
         //$scope.finishTime = new Date();
