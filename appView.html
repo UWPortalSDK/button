@@ -1,7 +1,7 @@
 <!-- Primary template that will get shown when widget loads -->
 <script type="text/ng-template" id="buttonMain.html">
     <div class="round-button">
-        <div ng-class="(canClick !== undefined && canClick) ? (click ? 'round-button-circle outer-click' : 'round-button-circle') : 'round-button-circle-disabled'" id="inner">
+        <div ng-class="(canClick !== false) ? (click ? 'round-button-circle outer-click' : 'round-button-circle') : 'round-button-circle-disabled'" id="inner">
             <a ng-click='onClick()' ng-class="click ? 'round-button inner-click' : 'round-button'" style="color: {{color}}">{{timeString}}</a>
         </div>
     </div>
