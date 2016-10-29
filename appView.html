@@ -1,8 +1,8 @@
 <!-- Primary template that will get shown when widget loads -->
 <script type="text/ng-template" id="buttonMain.html"> 
-        	<div ng-class="button" class="round-button">
-        		<div class="round-button-circle" id="inner">
-            		<a ng-href='#here' ng-click='onClick()' class="round-button"; color: {{color}}>{{timeString}}</a>
+        	<div ng-class="click ? 'round-button click' : 'round-button'">
+        		<div ng-class="click ? 'round-button-circle click' : 'round-button-circle'" id="inner">
+            		<a ng-click='onClick()' ng-class="click ? 'round-button click' : 'round-button'"; color: {{color}}>{{timeString}}</a>
             	</div>
     		</div>
 </script>
